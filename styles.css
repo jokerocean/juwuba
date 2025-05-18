@@ -1,0 +1,251 @@
+.image-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content:flex-start; /* 图片靠左对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 20px; /* 图片之间的间距 */
+}
+.container1{
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: center; /* 图片居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 20px; /* 图片之间的间距 */
+}
+.image-item {
+    text-align: center; /* 让文字居中 */
+    width: 300px;
+}
+
+.image-item img {
+    display: block; /* 图片独占一行 */
+    margin: 0 auto; /* 图片水平居中 */
+}
+
+.caption {
+    margin-top: 10px; /* 设置文字与图片的间距 */
+    font-size: 18px; /* 设置文字大小 */
+    font-weight: bold;
+    color: #333; /* 设置文字颜色 */
+}
+.caption1{
+    margin-top:0px;
+    font-size:20px;
+    color: #e60012; /* 红色，突出价格 */
+}
+/* 全局样式 */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #e60012;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.section {
+    padding: var(--padding);
+    margin-bottom: var(--padding);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* 标题样式 */
+h1, h2, h3 {
+    color: #007BFF; /* 设置标题颜色为蓝色 */
+    text-align: center; /* 居中对齐 */
+}
+
+/* 链接样式 */
+a {
+    color: #007BFF; /* 默认链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+a:hover {
+    color: #0056b3; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 添加下划线 */
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none;
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 导航栏样式 */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* 导航背景颜色 */
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff; /* 导航链接颜色 */
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #FFD700; /* 鼠标悬停时的导航链接颜色 */
+}
+
+/* 图片容器样式 */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #ddd; /* 图片边框 */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff; /* 图片背景颜色 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.image-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* 表单样式 */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #217567;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* 父容器设置为 Flex 布局 */
+.productions-container {
+    display: flex;
+    align-items: flex-start; /* 垂直顶部对齐 */
+    gap: 20px; /* 按钮和产品列表之间的间距 */
+}
+
+/* 类目按钮样式 */
+.categories {
+    display: flex;
+    flex-direction: column; /* 按钮垂直排列 */
+    gap: 10px; /* 按钮之间的间距 */
+    size: 10px;
+}
+.category-btn{
+    padding: 50px 20px;
+    background-color: #03cef1; /* 按钮背景颜色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none;
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-btn:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+/* 产品列表样式 */
+.productions-item {
+    flex: 1; /* 占据剩余空间 */
+}
+
+/* 隐藏未选中的产品列表 */
+.product-list {
+    display: none;
+}
+
+.product-list.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.caption-null{
+    margin-top: 0px;
+    font-size: 20px;
+    color: #0066ff; /* 红色，突出价格 */
+}
